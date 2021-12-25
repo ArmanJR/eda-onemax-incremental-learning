@@ -9,7 +9,9 @@ The OneMax Problem or BitCounting is a simple problem consisting in maximizing t
 
 ## How is Incremental Learning different from simple EDAs?
 In incremental learning approach, instead of generating probability vector in every iteration, we modify the last P as following:
-`p[i] = p[i] + landa * (best[i] - p[i])`
+
+```p[i] = p[i] + landa * (best[i] - p[i])```
+
 Where `landa` is the learning rate (i.e. 0.02) and `best` is the fittest vector in our population.
 
 ## Executing program
